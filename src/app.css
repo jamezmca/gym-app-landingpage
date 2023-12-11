@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.bgGrid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+button,
+.button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.specialBtn {
+    border-color: #646cff;
+}
+
+.specialBtnDark {
+    background: #646cff;
+    color: white;
+}
+
+.specialBtn:hover {
+    border-color: blue;
+}
+
+.dropShadow {
+    filter: drop-shadow(-10.8923px 14.523px 35.0973px rgba(29, 140, 242, 0.2));
+}
+
+.fadeIn {
+    animation: fadeIn 300ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
